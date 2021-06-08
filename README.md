@@ -1,4 +1,5 @@
 -=-=- Alpha Compiler -=-=- 
+    
     > run 'make compiler' to compile the Compiler
     
     > run 'make clean_compiler' to clean binary/object files associated with the compiler and also any files
@@ -15,6 +16,7 @@
       and lastly the binary file which can be found in the root directory of the program.
 
 -=-=- Alpha Virtual Machine -=-=- 
+    
     > run 'make vm' to compile the Virtual Machine
 
     > run 'make clean_vm' to clean binary/object files associated with the virtual Machine
