@@ -1,0 +1,11 @@
+0: jump	8[line 1]
+1: funcstart	foo [line 1]
+2: param	Hello
+ [line 2]
+3: call	print [line 2]
+4: getretval	^0 [line 2]
+5: return	1 [line 3]
+6: jump	7[line 3]
+7: funcend	foo [line 4]
+8: call	foo [line 6]
+9: getretval	^0 [line 6]

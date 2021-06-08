@@ -1,0 +1,26 @@
+magic number: 384838503862
+arrays:
+	strConsts: 1
+		size: 6, value: Hello
+
+	numConsts: 1
+		index: 0, value: 1.000000
+	userFunctions: 1
+		address: 1, localsize: 1, size: 3, id: foo
+	libFunctions: 1
+		size: 5, id: print
+
+total instructions: 10
+
+Ind   Opcode          Result                Arg1                  Arg2
+
+[000] jump_v          label_a   (00) 8      
+[001] funcenter_v     userfunc_a(08) 1      
+[002] pusharg_v       string_a  (05) 0      
+[003] call_v          libfunc_a (09) 0      
+[004] assign_v        local_a   (03) 0      retval_a  (10) 0      
+[005] assign_v        retval_a  (10) 0      number_a  (04) 0      
+[006] jump_v          label_a   (00) 7      
+[007] funcexit_v      userfunc_a(08) 1      
+[008] call_v          userfunc_a(08) 1      
+[009] assign_v        global_a  (01) 0      retval_a  (10) 0      

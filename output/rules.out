@@ -1,0 +1,36 @@
+idlist ->  
+lvalue -> ID
+const -> STRING
+primary -> const
+term -> primary
+expr -> term
+elist -> expr
+normalcall -> ( elist )
+callsuffix -> normalcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+stmt -> expr;
+stmt -> stmts stmt
+const -> INT_CONST
+primary -> const
+term -> primary
+expr -> term
+returnstmt -> return expr;
+stmt -> returnstmt;
+stmt -> stmts stmt
+block -> { stmts }
+stmt -> funcdef;
+stmt -> stmts stmt
+lvalue -> ID
+elist ->  
+normalcall -> ( elist )
+callsuffix -> normalcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+stmt -> expr;
+stmt -> stmts stmt
+program -> stmts
