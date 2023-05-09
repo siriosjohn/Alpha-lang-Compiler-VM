@@ -1,3 +1,5 @@
+This is Compiler and VM is build for a JS-like programming language called Alpha.
+
 -=-=- Alpha Compiler -=-=- 
     
     > run 'make compiler' to compile the Compiler
